@@ -98,6 +98,14 @@ System.out.println(m);
     }
     
     
+    @Test
+    public void stream10()
+    {
+    	List<String>ms=Stream.of("GAURESH","RAMESH","SURESH").filter(w->w.endsWith("H")).map(w->w.toLowerCase()).collect(Collectors.toList());
+    	System.out.println(ms.get(1));
+    }
+    
+    
     
     
     
